@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+ body{
+ background-color: #fee18d;
+background-image: linear-gradient(45deg, #fee18d 0%, #fcace3 100%);
+
+
+} 
+.main_body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+   
+}
+.upper_box {
+    height:248px;
+    width:440px;
+    background-image: url("./assets/calculator.jpeg");
+    background-size:contain; 
+    background-repeat: no-repeat;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px; 
+    border-top: 2px black solid;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+}
+.lower_box{
+    top:-1px;
+    position:relative;
+    border-bottom: 2px black solid;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+    width:440px;
+    height:300px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;   
+    background-color: hsl(348, 100%, 81%);
+    background-image: linear-gradient(123deg, hsl(348, 82%, 81%) 0%, #fffcfd 55%, #fef4f4 100%);
+}
+.lower_box h1{
+    font-size: 1.9rem;
+    margin:12px;
+}
+.lower_box label{
+    font-weight: bold;
+    margin:12px;
+    font-size: larger;
+}
+.label1{
+    margin-top:24px;
+}
+input[type="date"]{
+    width:400px;
+    height:30px;
+    margin-left: 12px;
+    padding:5px;
+    border-radius: 6px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+::-webkit-calendar-picker-indicator{
+    cursor:pointer;
+    padding: 5px;
+    background-color: rgb(238, 109, 62); 
+    border-radius: 10px;
+}
+
+button{
+    background-color: rgb(238, 109, 62);
+    border-radius: 5px;
+    height: 40px;
+    width:380px;
+    border:none;
+    outline:none;
+    color:white;
+    font-size: larger;
+    margin-top:30px;
+    margin-left: 20px;
+    cursor:pointer;
+
+}
+.age{
+    text-align: center;
+    font-size: larger;
+    margin-top:28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+
+}
+#alert{
+    
+    height:10px;
+    margin-left: 18px;
+    visibility: hidden;
+    color:red;
+   
+}
+/* @media(max-width:540px){
+    .lower_box{
+        width:330px;
+        height:300px;
+    } 
+    .upper_box{
+        width:330px;
+    }
+    button{
+        width:220px;
+    }
+
+
+} */
